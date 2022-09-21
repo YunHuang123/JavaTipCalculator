@@ -17,7 +17,9 @@ public class TipCalculator {
         double tipPerPerson = tipAmount / numPeople;
         double payPerPerson = totalPay / numPeople;
 
-        System.out.println("$" + tipAmount);
-        System.out.println("$" + totalPay);
+        System.out.println("Tip Amount: $" + String.format("%.2f", tipAmount));
+        System.out.println("Total Pay: $" + String.format("%.2f", totalPay));
+        System.out.println("Tip per Person: $" + String.format("%.2f", tipPerPerson));
+        System.out.println("Total Pay per Person: $" + String.format("%.2f", payPerPerson));
     }
 }
